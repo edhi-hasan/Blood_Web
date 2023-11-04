@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloodology</title>
+    <script src="https://kit.fontawesome.com/9f358cce60.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navigation bar -->
+    <div class="navigation">
+        <div class="nav-logo">
+            <div class="logo"></div>
+        </div>
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#">About Us</a>
+        <a href="Search-donors.html"><i class="fa-solid fa-magnifying-glass"></i> Search Donors </a>
+        <a href="Add-Blood-Request.html">Add Blood Request</a>
+        <a href="signup.html"><i class="fa-solid fa-user-plus"></i> SignUp</a>
+        <a href="login.html"> Login <i class="fa-solid fa-right-to-bracket"></i></a>
+    </div>
+
+    <!-- Container part -->
+    <div class="container">
+        <div class="container-1">
+            <h1>The gift of blood is a gift<br />to someones life</h1>
+            <p>Bloodology help with anything related to blood. It helps manage blood donations and events <br>where people can give blood. It also links up donors with people who need blood. <br> Bloodology makes it simple to get involved in this important work.</p>
+            <button><a href="Add-Blood-Request.html">Add Blood Request</a></button>
+            <button> <a href="signup.html">Join as Donors</a></button>
+        </div>
+        <div class="container-pic">
+            <div id="slideshow">
+                <img src="image/img1.png" id="image" />
+            </div>
+            <!-- Java Script for changing picture -->
+            <script>
+                var images = [
+                    "image/img1.png",
+                    "image/img2.png",
+                    "image/img3.png",
+                    "image/img6.png",
+                    "image/img7.png",
+                ]; 
+                var currentIndex = 0;
+                var image = document.getElementById("image");
+                setInterval(function () {
+                currentIndex = (currentIndex + 1) % images.length;
+                image.src = images[currentIndex];
+                }, 3000); 
+            </script>
+        </div>
+    </div>
+
+    <!------------- Request Post For Blood ---------------->
+
+    <div class="request-post">
+        <h2>Blood request post</h2>
+        <div class="all-post">
+            <div class="post-page">
+                    <h4>Post</h4>
+                <div class="info">
+                    <p>Disease - </p>
+                    <div class="info1">
+                        <p>Delivery</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>Blood Group -</p>
+                    <div class="info1">
+                        <p>O-</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>Number Of Bag - </p>
+                    <div class="info1">
+                        <p> 2 Bag</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>Date & Time - </p>
+                    <div class="info1">
+                        <p>10 November, 03 PM</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>Location - </p>
+                    <div class="info1">
+                        <p> Chittagong Medical College</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>Phone Number - </p>
+                    <div class="info1">
+                        <p>01858284609</p>
+                    </div>
+                </div>
+            </div>
+            <div class="post-page">
+                <h4>Post</h4>
+                <div class="info">
+                    <p>Disease - </p>
+                    <div class="info1">
+                        <p>Delivery</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>Blood Group -</p>
+                    <div class="info1">
+                        <p>O-</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>Number Of Bag - </p>
+                    <div class="info1">
+                        <p> 2 Bag</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>Date & Time - </p>
+                    <div class="info1">
+                        <p>10 November, 03 PM</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>Location - </p>
+                    <div class="info1">
+                        <p> Chittagong Medical College</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>Phone Number - </p>
+                    <div class="info1">
+                        <p>01858284609</p>
+                    </div>
+                </div>
+            </div>
+            <div class="post-page">
+                <h4>Post</h4>
+                <div class="info">
+                    <p>Disease - </p>
+                    <div class="info1">
+                        <p>Delivery</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>Blood Group -</p>
+                    <div class="info1">
+                        <p>O-</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>Number Of Bag - </p>
+                    <div class="info1">
+                        <p> 2 Bag</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>Date & Time - </p>
+                    <div class="info1">
+                        <p>10 November, 03 PM</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>Location - </p>
+                    <div class="info1">
+                        <p> Chittagong Medical College</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>Phone Number - </p>
+                    <div class="info1">
+                        <p>01858284609</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="all-post-request.html">See more...</a>
+    </div>
+    <div class="quote-sec">
+        <div class="quote">
+            <i class="fa fa-quote-left" style="font-size:48px;color:red"></i>
+            <p>Take care of yourself, eat well, and donate blood.</p>
+        </div>
+        <div class="quote">
+            <i class="fa fa-quote-left" style="font-size:48px;color:red"></i>
+            <p>Once a blood donor is always a lifesaver.</p>
+        </div>
+        <div class="quote">
+            <i class="fa fa-quote-left" style="font-size:48px;color:red"></i>
+            <p>Donating blood can make a big difference.</p>
+        </div>
+    </div>
+
+
+    <!------------- Footer Section ---------------->
+    <div class="footer">
+        <div class="footer-1">
+            <div class="about">
+                <h3>About Us</h3>
+                <p>Bloodology is a website made by student of premier University for their final project, a tool to help with anything related to blood. It helps manage blood donations and events where people can give blood. It also links up donors with people who need blood. Bloodology makes it simple to get involved in this important work.</p>
+            </div>
+            <div class="important-link">
+                <h3>Important Link</h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="Add-Blood-Request.html">Add Blood Request</a></p>
+                <p><a href="Search-donors.html">Search Donor</a></p>
+                <p><a href="Compatible-Blood.html">Compatible Blood Type Donors</a></p>
+            </div>
+            <div class="advantage">
+                <h4><a href="advantage-page.html">Advantage of Donating Blood</a></h4>
+                <h4><a href="blood-donation-tips.html">Blood Donation Tips</a></h4>
+                <h4><a href="">All Question About Blood</a></h4>
+            </div>
+        </div>
+        <div class="footer-2">
+            <div class="logo"></div>
+            <div class="address">
+                <h3>Address</h3>
+                <p>Academic Building-4</p>
+                <p><i class="fa-regular fa-message"></i> info@puc.ac.bd</p>
+                <p><i class="fa-solid fa-location-dot"></i> HazariLane, Kotwali, Chittagong.</p>
+                <p><i class="fa-solid fa-phone-volume"></i> +88-031-657892.</p>
+            </div>
+            <div class="msg">
+                <h3>Advice & Complain here</h3>
+                <textarea
+                  class="t-aria"
+                  id="new_message"
+                  name="new_message"
+                  placeholder="Type in your message"
+                  rows="4"
+                  cols="40"
+                ></textarea><br>
+                <button class="btn" type="submit"><i class="fa-solid fa-paper-plane"></i> Sent</button>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright © All rights reservs
+        </div>
+    </div>
+
+</body>
+</html>

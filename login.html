@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloodology</title>
+    <script src="https://kit.fontawesome.com/9f358cce60.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .loginform{
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .loginform h2{
+            color: red;
+            margin-bottom: 20px;
+        }
+        .login{
+            width: 300px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.5s;
+        }
+
+        .login-container.show {
+            transform: translateY(0);
+        }
+
+        /* Style the form inside the container */
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Style the form inputs and button */
+        .login-form input[type="text"],
+        .login-form input[type="password"],
+        .login-form button {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .login-form button {
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .login-form button:hover {
+            background-color: #020202;
+            color: rgb(247, 242, 242);
+            transition: 0.5s;
+            border-radius: 4px;
+        }
+        .form_container a:hover {
+                text-decoration: underline;
+            }
+        .checkbox {
+            display: flex;
+            white-space: nowrap;
+            margin: 10px 10px 10px 0px;
+        }
+
+        .checkbox input {
+            accent-color: #f50909;
+        }
+
+        .checkbox label {
+            font-size: 12px;
+            cursor: pointer;
+            user-select: none;
+            color: #0b0217;
+            margin-left: 5px;
+        }
+        .login_signup {
+            font-size: 12px;
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+    </style>
+
+</head>
+<body>
+    <!-- navigation bar -->
+    <div class="navigation">
+        <div class="nav-logo">
+            <div class="logo"></div>
+        </div>
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#">About Us</a>
+        <a href="Search-donors.html"><i class="fa-solid fa-magnifying-glass"></i> Search Donors </a>
+        <a href="Add-Blood-Request.html">Add Blood Request</a>
+        <a href="signup.html"><i class="fa-solid fa-user-plus"></i> SignUp</a>
+        <a href="#"> Login <i class="fa-solid fa-right-to-bracket"></i></a>
+    </div>
+    
+    <!------------- Login Section ---------------->
+    <div class="loginform">
+        <h2>Login</h2>
+        <div class="login">
+            <form class="login-form">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <div class="option_field">
+                    <span class="checkbox">
+                        <input type="checkbox" id="check" />
+                        <label for="check "> Remember me</label>
+                    </span>
+                </div>
+                <button class="button">Login Now</button>
+                <div class="login_signup">Don't have an account? <a href="signup.html" id="signup">Signup</a></div>
+            </form>
+        </div>
+    </div>
+    
+
+    <!------------- Footer Section ---------------->
+    <div class="footer">
+        <div class="footer-1">
+            <div class="about">
+                <h3>About Us</h3>
+                <p>Bloodology is a website made by student of premier University for their final project, a tool to help with anything related to blood. It helps manage blood donations and events where people can give blood. It also links up donors with people who need blood. Bloodology makes it simple to get involved in this important work.</p>
+            </div>
+            <div class="important-link">
+                <h3>Important Link</h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="Add-Blood-Request.html">Add Blood Request</a></p>
+                <p><a href="Search-donors.html">Search Donor</a></p>
+                <p><a href="Compatible-Blood.html">Compatible Blood Type Donors</a></p>
+            </div>
+            <div class="advantage">
+                <h4><a href="advantage-page.html">Advantage of Donating Blood</a></h4>
+                <h4><a href="blood-donation-tips.html">Blood Donation Tips</a></h4>
+                <h4><a href="">All Question About Blood</a></h4>
+                <a href=""></a>
+            </div>
+        </div>
+        <div class="footer-2">
+            <div class="logo"></div>
+            <div class="address">
+                <h3>Address</h3>
+                <p>Academic Building-4</p>
+                <p><i class="fa-regular fa-message"></i> info@puc.ac.bd</p>
+                <p><i class="fa-solid fa-location-dot"></i> HazariLane, Kotwali, Chittagong.</p>
+                <p><i class="fa-solid fa-phone-volume"></i> +88-031-657892.</p>
+            </div>
+            <div class="msg">
+                <h3>Advice & Complain here</h3>
+                <textarea
+                  class="t-aria"
+                  id="new_message"
+                  name="new_message"
+                  placeholder="Type in your message"
+                  rows="4"
+                  cols="40"
+                ></textarea><br>
+                <button class="btn" type="submit"><i class="fa-solid fa-paper-plane"></i> Sent</button>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright © All rights reservs
+        </div>
+    </div>
+
+</body>
+</html>
